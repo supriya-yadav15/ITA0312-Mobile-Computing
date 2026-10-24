@@ -1,0 +1,82 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Job Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💼 Intelligent Job Assistant</h1>
+    <p class="subtitle">Your career, your future!</p>
+
+    <!-- LOGIN AND REGISTER -->
+    <section id="loginSection">
+        <h2>Login / Register</h2>
+
+        <input id="username" type="text" placeholder="Enter username">
+        <input id="password" type="password" placeholder="Enter password">
+
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="appSection" class="hidden">
+
+        <h2>Welcome to Your Dashboard!</h2>
+        <p>Complete the sections below to explore job opportunities.</p>
+
+        <div class="card">
+            <h3>👤 Personal Details</h3>
+            <input id="fullName" type="text" placeholder="Full name">
+            <input id="email" type="email" placeholder="Email address">
+            <input id="qualification" type="text" placeholder="Qualification">
+            <input id="skills" type="text" placeholder="Skills">
+            <button onclick="saveDetails()">Save Details</button>
+            <p id="detailsMessage"></p>
+        </div>
+
+        <div class="card">
+            <h3>📄 Upload Resume</h3>
+            <p>Select your resume in PDF or Word format.</p>
+            <input id="resume" type="file"
+                   accept=".pdf,.doc,.docx">
+            <button onclick="uploadResume()">Select Resume</button>
+            <p id="resumeMessage"></p>
+        </div>
+
+        <div class="card">
+            <h3>🔎 Choose Your Job</h3>
+            <select id="job">
+                <option value="">-- Select a Job --</option>
+                <option>Software Developer</option>
+                <option>Web Developer</option>
+                <option>Data Analyst</option>
+                <option>AI Engineer</option>
+                <option>Cybersecurity Analyst</option>
+            </select>
+            <button onclick="chooseJob()">Find Job</button>
+            <p id="jobMessage"></p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Subscription</h3>
+            <p>Explore our demo premium job assistance service.</p>
+            <button onclick="subscribe()">Subscribe</button>
+            <p id="subscriptionMessage"></p>
+        </div>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
