@@ -1,0 +1,97 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #20845a;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #269c68;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #18794e;
+}
+
+.card {
+    background: #f0fff5;
+    padding: 18px;
+    margin: 15px 0;
+    border-left: 5px solid #269c68;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #20845a;
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    color: #20845a;
+    font-weight: bold;
+}
+
+.logout {
+    background: #e74c3c;
+}
+
+.logout:hover {
+    background: #c0392b;
+}
+```

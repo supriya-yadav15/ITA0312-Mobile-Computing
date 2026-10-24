@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Self-Care App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Health & Self-Care</h1>
+        <p class="subtitle">Take care of your mind and body!</p>
+
+        <div id="loginSection">
+            <h2>Login / Register</h2>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="password" id="password" placeholder="Enter password">
+
+            <button onclick="register()">Register</button>
+            <button onclick="login()">Login</button>
+            <p id="message"></p>
+        </div>
+
+        <div id="appSection" class="hidden">
+            <h2>Welcome!</h2>
+
+            <div class="card">
+                <h3>🌿 Health Routine Blogs</h3>
+                <p>Drink enough water, eat healthy food, sleep well, and exercise regularly.</p>
+            </div>
+
+            <div class="card">
+                <h3>💚 Self-Care Blogs</h3>
+                <p>Take breaks, enjoy your hobbies, read books, and spend time relaxing.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧘 Meditation and Exercises</h3>
+                <p>Practice deep breathing, gentle stretching, and daily walking.</p>
+            </div>
+
+            <button onclick="logout()" class="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
