@@ -1,0 +1,65 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚗 Smart Parking System</h1>
+    <p class="subtitle">Find and book your parking slot</p>
+
+    <section id="loginSection">
+        <h2>Login / Register</h2>
+        <input id="username" placeholder="Enter username">
+        <input id="password" type="password" placeholder="Enter password">
+
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+    </section>
+
+    <section id="appSection" class="hidden">
+        <h2>Parking Dashboard</h2>
+
+        <div class="summary">
+            <div class="stat">
+                <h3 id="totalCount">6</h3>
+                <p>Total Slots</p>
+            </div>
+            <div class="stat">
+                <h3 id="emptyCount">4</h3>
+                <p>Empty Slots</p>
+            </div>
+            <div class="stat">
+                <h3 id="bookedCount">2</h3>
+                <p>Booked Slots</p>
+            </div>
+        </div>
+
+        <h2>Available Parking Slots</h2>
+        <div id="parkingGrid" class="parking-grid"></div>
+
+        <h2>Book a Parking Slot</h2>
+        <select id="slotSelect">
+            <option value="">-- Select Available Slot --</option>
+        </select>
+        <input id="vehicleNumber" placeholder="Vehicle number">
+        <button onclick="bookSlot()">Book Slot</button>
+        <p id="bookingMessage"></p>
+
+        <h2>My Booking</h2>
+        <div id="myBooking">No booking yet.</div>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
